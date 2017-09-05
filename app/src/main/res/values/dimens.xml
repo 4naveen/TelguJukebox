@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="star_image_height">14dp</dimen>
+    <dimen name="star_image_width">14dp</dimen>
+    <dimen name="voteaverage_layout_width">16dp</dimen>
+    <dimen name="margin2dp">2dp</dimen>
+    <dimen name="expandedTitleMarginEnd">64dp</dimen>
+    <dimen name="expandedTitleMarginStart">48dp</dimen>
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_24dp">24dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="simpleratingbar_width">162dp</dimen>
+    <dimen name="srb_starSize">24dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="view_height_1dp">1dp</dimen>
+
+</resources>

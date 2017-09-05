@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lorvent.project.telgujukebox.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:layout_height="200dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/favJukeboxlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:id="@+id/text_fav"
+                    android:text="My Favourites" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/favorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/latestJukeboxlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="16dp"
+                    android:text="Latest Jukebox" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/see_all_latest"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="See All >"
+                    android:paddingTop="@dimen/margin4dp"
+                    android:paddingBottom="@dimen/margin4dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldJukeboxlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="16dp"
+                    android:text="Old hits" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                        android:text="See All >"
+                        android:id="@+id/see_all_old"
+                        android:paddingTop="@dimen/margin4dp"
+                        android:paddingBottom="@dimen/margin4dp"
+                        android:gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/old"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/loading_indicator_movie_poster"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal|center" />
+
+</FrameLayout>

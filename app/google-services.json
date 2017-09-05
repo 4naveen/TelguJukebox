@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "18303595189",
+    "firebase_url": "https://telgujukebox.firebaseio.com",
+    "project_id": "telgujukebox",
+    "storage_bucket": "telgujukebox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18303595189:android:b612a8d4ce7f2c6a",
+        "android_client_info": {
+          "package_name": "com.lorvent.project.telgujukebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18303595189-pdc07kh1kuqamfljob97ejsuiiglup8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lorvent.project.telgujukebox",
+            "certificate_hash": "031d17144b9d6f89b22836964914accdd1cf8c87"
+          }
+        },
+        {
+          "client_id": "18303595189-9tupim10m729o2tllsmp3sjrfula04kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_xlN_UDPu8VkdMlcdyUfjcdhbXCNjoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18303595189-9tupim10m729o2tllsmp3sjrfula04kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
